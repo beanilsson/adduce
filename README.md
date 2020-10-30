@@ -1,6 +1,6 @@
 # adduce
 
-Small command line tool for getting resources online. HTTP and HTTPS currently supported
+Command line tool for getting resources online. HTTP and HTTPS currently supported
 
 ## Usage
 
