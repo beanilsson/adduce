@@ -17,7 +17,6 @@ Tool for getting resources online. HTTP and HTTPS currently supported
 ## Within a package
 ```
 const adduce = require("../adduce");
-const resp = adduce("https://api.mydomain/v1/items");
-console.log(resp);
+adduce("https://api.mydomain/v1/items");
 
 ```
