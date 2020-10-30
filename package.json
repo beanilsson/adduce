@@ -10,7 +10,6 @@
     "bin": "./bin/adduce.js",
     "dependencies": {
         "chalk": "^4.1.0",
-        "execa": "^4.0.3",
         "yargs": "^16.1.0"
     },
     "devDependencies": {
@@ -26,5 +25,9 @@
         "REST"
     ],
     "author": "beanilsson",
-    "license": "GPL-3.0"
+    "license": "GPL-3.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/beanilsson/adduce.git"
+    }
 }
