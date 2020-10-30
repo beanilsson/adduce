@@ -1,4 +1,4 @@
-const http = require("http");
+const https = require("https");
 const colours = require("../colours");
 
 const cyan = colours.cyan;
@@ -6,7 +6,7 @@ const error = colours.error;
 
 const run = (options) => {
   const reqOptions = { ...options, method: "GET" };
-  const req = http.request(reqOptions, (res) => {
+  const req = https.request(reqOptions, (res) => {
     const statusCode = `Status code: ${cyan(res.statusCode)}`;
     process.stdout.write(statusCode);
     process.stdout.write("\n");

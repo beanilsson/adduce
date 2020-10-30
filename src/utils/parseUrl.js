@@ -9,6 +9,7 @@ module.exports = (urlString) => {
       hostname: url.hostname,
       port: url.port,
       path: url.pathname,
+      protocol: url.protocol,
     };
   } catch (err) {
     console.log(error(err.code + ":", err.input));
