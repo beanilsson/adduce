@@ -1,0 +1,29 @@
+{
+    "name": "adduce",
+    "version": "0.0.1",
+    "description": "Command line http request tool",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "format": "prettier-standard --format",
+        "lint": "eslint \"src/**/*\""
+    },
+    "bin": "./bin/adduce.js",
+    "dependencies": {
+        "chalk": "^4.1.0",
+        "execa": "^4.0.3",
+        "yargs": "^16.1.0"
+    },
+    "devDependencies": {
+        "eslint": "^6.5.1",
+        "prettier-standard": "^16.0.0"
+    },
+    "prettier": "prettier-standard",
+    "keywords": [
+        "command",
+        "line",
+        "http",
+        "request"
+    ],
+    "author": "beanilsson",
+    "license": "GPL-3.0"
+}
