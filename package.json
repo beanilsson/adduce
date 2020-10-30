@@ -21,8 +21,9 @@
     "keywords": [
         "command",
         "line",
-        "http",
-        "request"
+        "get",
+        "request",
+        "REST"
     ],
     "author": "beanilsson",
     "license": "GPL-3.0"
