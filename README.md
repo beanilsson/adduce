@@ -1,8 +1,8 @@
 # adduce
 
-Command line tool for getting resources online. HTTP and HTTPS currently supported
+Tool for getting resources online. HTTP and HTTPS currently supported
 
-## Usage
+## Usage as a cli
 
 `npm i -g adduce` or via `npx`
 
@@ -13,3 +13,11 @@ Command line tool for getting resources online. HTTP and HTTPS currently support
 ### With query params
 
 `adduce http://api.mydomain/v1/items?limit=1`
+
+## Within a package
+```
+const adduce = require("../adduce");
+const resp = adduce("https://api.mydomain/v1/items");
+console.log(resp);
+
+```

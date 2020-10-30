@@ -1,19 +1,19 @@
 {
   "name": "adduce",
-  "version": "0.0.8",
-  "description": "Command line get request tool",
+  "version": "0.0.9",
+  "description": "Get request tool",
   "scripts": {
     "format": "prettier-standard --format"
   },
-  "bin": "./bin/adduce.js",
+    "bin": "./bin/adduce.js",
+    "main": "./lib/getRequest.js",
   "dependencies": {},
   "devDependencies": {
     "prettier-standard": "^16.0.0"
   },
   "prettier": "prettier-standard",
   "keywords": [
-    "command",
-    "line",
+    "command line",
     "get",
     "request",
     "REST"
