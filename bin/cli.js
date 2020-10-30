@@ -1,31 +1,22 @@
-const yargs = require('yargs/yargs')
-const { hideBin } = require('yargs/helpers')
-const argv = yargs(hideBin(process.argv)).argv
-const getFunc = require('../src/requests/get')
-const getFuncHTTPS = require('../src/requests/getHTTPS')
-const colours = require('../src/colours')
-const parseUrl = require('../src/utils/parseUrl')
-
-const log = console.log
-const error = colours.error
+const yargs = require("yargs/yargs");
+const { hideBin } = require("yargs/helpers");
+const argv = yargs(hideBin(process.argv)).argv;
+const getFunc = require("../src/getRequest");
+const parseUrl = require("../src/parseUrl");
 
 const run = () => {
   if (argv.url && argv.url.length > 0) {
-    const options = parseUrl(argv.url)
+    const options = parseUrl(argv.url);
     if (options) {
-      if (options.protocol === 'http:') {
-        getFunc.run(options)
-      } else if (options.protocol === 'https:') {
-        getFuncHTTPS.run(options)
-      } else {
-        log(error('Unsupported protocol:', options.protocol))
-      }
+      getFunc.run(options);
+    } else {
+      console.log("Unsupported protocol:", options.protocol);
     }
   } else {
-    log(error('Missing url'))
+    console.log(error("Missing url"));
   }
-}
+};
 
 module.exports = {
-  run: run
-}
+  run: run,
+};

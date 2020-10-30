@@ -1,13 +1,12 @@
 {
   "name": "adduce",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Command line get request tool",
   "scripts": {
     "format": "prettier-standard --format"
   },
   "bin": "./bin/adduce.js",
   "dependencies": {
-    "chalk": "^4.1.0",
     "yargs": "^16.1.0"
   },
   "devDependencies": {
