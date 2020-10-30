@@ -14,6 +14,7 @@ const run = (options) => {
 
     res.on("data", (d) => {
       process.stdout.write(d);
+      process.stdout.write("\n");
     });
   });
 
