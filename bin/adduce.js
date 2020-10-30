@@ -2,4 +2,4 @@
 
 // adduce
 
-require('./cli').run()
+require('./cli')()

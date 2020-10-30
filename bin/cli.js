@@ -1,8 +1,8 @@
-const getFunc = require("../src/getRequest");
-const parseUrl = require("../src/parseUrl");
+const getFunc = require("../lib/getRequest");
+const parseUrl = require("../lib/parseUrl");
 const argv = process.argv;
 
-const run = () => {
+module.exports = () => {
   const argvUrl = argv[2];
   if (argvUrl && argvUrl.length > 0) {
     const options = parseUrl(argvUrl);
@@ -14,8 +14,4 @@ const run = () => {
   } else {
     console.log(error("Missing url"));
   }
-};
-
-module.exports = {
-  run: run,
 };
