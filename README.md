@@ -4,10 +4,12 @@ Small command line tool for getting resources online. HTTP and HTTPS currently s
 
 ## Usage
 
+`npm i -g adduce` or via `npx`
+
 ### Plain request
 
-`npx adduce --url= http://api.mydomain/v1/items`
+`adduce --url= http://api.mydomain/v1/items`
 
 ### With query params
 
-`npx adduce --url= http://api.mydomain/v1/items?limit=1`
+`adduce --url= http://api.mydomain/v1/items?limit=1`

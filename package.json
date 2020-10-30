@@ -1,6 +1,6 @@
 {
   "name": "adduce",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Command line get request tool",
   "scripts": {
     "format": "prettier-standard --format"
