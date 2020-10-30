@@ -8,8 +8,8 @@ Command line tool for getting resources online. HTTP and HTTPS currently support
 
 ### Plain request
 
-`adduce --url= http://api.mydomain/v1/items`
+`adduce http://api.mydomain/v1/items`
 
 ### With query params
 
-`adduce --url= http://api.mydomain/v1/items?limit=1`
+`adduce http://api.mydomain/v1/items?limit=1`

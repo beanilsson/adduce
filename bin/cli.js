@@ -1,12 +1,11 @@
-const yargs = require("yargs/yargs");
-const { hideBin } = require("yargs/helpers");
-const argv = yargs(hideBin(process.argv)).argv;
 const getFunc = require("../src/getRequest");
 const parseUrl = require("../src/parseUrl");
+const argv = process.argv;
 
 const run = () => {
-  if (argv.url && argv.url.length > 0) {
-    const options = parseUrl(argv.url);
+  const argvUrl = argv[2];
+  if (argvUrl && argvUrl.length > 0) {
+    const options = parseUrl(argvUrl);
     if (options) {
       getFunc.run(options);
     } else {
