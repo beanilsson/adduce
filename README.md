@@ -1,6 +1,9 @@
 # adduce
-Small command line tool for getting resources online
+Small command line tool for getting resources online. HTTP and HTTPS currently supported
 
 ## Usage
-`npx adduce --get --url= http://api.apikatalogen.se/v1/sources/slug/api-katalogens-api`
-`npx adduce --get --url=https://duckduckgo.com/`
+### Plain request
+`npx adduce --get --url= http://api.mydomain/v1/items`
+
+### With query params
+`npx adduce --get --url= http://api.mydomain/v1/items?limit=1`

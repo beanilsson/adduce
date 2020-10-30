@@ -8,7 +8,7 @@ module.exports = (urlString) => {
     return {
       hostname: url.hostname,
       port: url.port,
-      path: url.pathname,
+      path: url.pathname + url.search,
       protocol: url.protocol,
     };
   } catch (err) {
