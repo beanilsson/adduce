@@ -1,18 +1,18 @@
-const colours = require("../colours");
+const colours = require('../colours')
 
-const error = colours.error;
+const error = colours.error
 
-module.exports = (urlString) => {
+module.exports = urlString => {
   try {
-    const url = new URL(urlString);
+    const url = new URL(urlString)
     return {
       hostname: url.hostname,
       port: url.port,
       path: url.pathname + url.search,
-      protocol: url.protocol,
-    };
+      protocol: url.protocol
+    }
   } catch (err) {
-    console.log(error(err.code + ":", err.input));
-    return;
+    console.log(error(err.code + ':', err.input))
+    return
   }
-};
+}

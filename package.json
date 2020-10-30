@@ -1,33 +1,30 @@
 {
-    "name": "adduce",
-    "version": "0.0.2",
-    "description": "Command line get request tool",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "format": "prettier-standard --format",
-        "lint": "eslint \"src/**/*\""
-    },
-    "bin": "./bin/adduce.js",
-    "dependencies": {
-        "chalk": "^4.1.0",
-        "yargs": "^16.1.0"
-    },
-    "devDependencies": {
-        "eslint": "^6.5.1",
-        "prettier-standard": "^16.0.0"
-    },
-    "prettier": "prettier-standard",
-    "keywords": [
-        "command",
-        "line",
-        "get",
-        "request",
-        "REST"
-    ],
-    "author": "beanilsson",
-    "license": "GPL-3.0",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/beanilsson/adduce.git"
-    }
+  "name": "adduce",
+  "version": "0.0.3",
+  "description": "Command line get request tool",
+  "scripts": {
+    "format": "prettier-standard --format"
+  },
+  "bin": "./bin/adduce.js",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "yargs": "^16.1.0"
+  },
+  "devDependencies": {
+    "prettier-standard": "^16.0.0"
+  },
+  "prettier": "prettier-standard",
+  "keywords": [
+    "command",
+    "line",
+    "get",
+    "request",
+    "REST"
+  ],
+  "author": "beanilsson",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beanilsson/adduce.git"
+  }
 }
