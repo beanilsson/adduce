@@ -21,6 +21,9 @@ Get only the response code:
 Get only the response body
 `adduce http://api.mydomain/v1/items --body`
 
+### Current adduce version
+`adduce --version`
+
 
 ## Within a package
 ```
