@@ -14,6 +14,14 @@ Tool for getting resources online. HTTP and HTTPS currently supported
 
 `adduce http://api.mydomain/v1/items?limit=1`
 
+### Filter the response
+Get only the response code:
+`adduce http://api.mydomain/v1/items --ping`
+
+Get only the response body
+`adduce http://api.mydomain/v1/items --body`
+
+
 ## Within a package
 ```
 const adduce = require("../adduce");
